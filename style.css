@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+#info {
+  background-color: white;
+  position: absolute;
+  top: 50vh;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+}
