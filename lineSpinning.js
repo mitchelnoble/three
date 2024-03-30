@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import { Text } from 'troika-three-text';
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -15,7 +14,17 @@ const scene = new THREE.Scene();
 //creating a blue LineBasicMaterial
 const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
 
-
+//creating the vectors
+const points = [];
+points.push(new THREE.Vector3(-10,0,0));
+points.push(new THREE.Vector3(0,10,0));
+points.push(new THREE.Vector3(10, 0, 0));
+points.push(new THREE.Vector3(-20,0,0));
+points.push(new THREE.Vector3(0,20,0));
+points.push(new THREE.Vector3(20, 0, 0));
+points.push(new THREE.Vector3(-20,0,0));
+points.push(new THREE.Vector3(0,20,0));
+points.push(new THREE.Vector3(20, 0, 0));
 
 //geometry takes the lines from the object vectors
 const geometry = new
